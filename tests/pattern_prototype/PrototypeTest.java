@@ -2,7 +2,7 @@ package pattern_prototype;
 
 import org.junit.Assert;
 import org.junit.Test;
-
+import prototype.*;
 
 public class PrototypeTest {
     @Test
