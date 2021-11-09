@@ -4,6 +4,8 @@ public class Circle extends Shape {
     private int radius;
 
     private Circle(Circle circle) {
+        this.color = circle.getColor();
+        this.radius = circle.getRadius();
     }
 
     public Circle() {
@@ -19,6 +21,6 @@ public class Circle extends Shape {
 
     @Override
     public Circle copy() {
-        return null;
+        return new Circle(this);
     }
 }

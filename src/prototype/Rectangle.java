@@ -4,6 +4,9 @@ public class Rectangle extends Shape{
     private int width, height;
 
     private Rectangle(Rectangle rectangle){
+        this.color = rectangle.getColor();
+        this.width = rectangle.getWidth();
+        this.height = rectangle.getHeight();
     }
 
     public Rectangle(){
@@ -28,6 +31,6 @@ public class Rectangle extends Shape{
 
     @Override
     public Rectangle copy() {
-        return null;
+        return new Rectangle(this);
     }
 }
