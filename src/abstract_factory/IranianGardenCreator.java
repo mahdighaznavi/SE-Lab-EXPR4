@@ -6,20 +6,30 @@ public class IranianGardenCreator implements GardenCreator{
 
     @Override
     public void createTree() {
+        this.tree = new Chenar();
     }
 
     @Override
     public void createFlower() {
+        this.flower = new Khatmi();
     }
 
     @Override
     public FlowerType getFlowerType() {
-        return null;
+        if(this.flower != null) {
+            return this.flower.getFlowerType();
+        } else {
+            return null;
+        }
     }
 
     @Override
     public TreeType getTreeType() {
-        return null;
+        if(this.tree != null) {
+            return this.tree.getTreeType();
+        } else {
+            return null;
+        }
     }
 
     public Tree getTree() {

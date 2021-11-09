@@ -8,16 +8,18 @@ public class Client {
     }
 
     public void plantTree() {
+        this.gardenCreator.createTree();
     }
 
     public void plantFlower() {
+        this.gardenCreator.createFlower();
     }
 
     public FlowerType getFlowerType() {
-        return null;
+        return gardenCreator.getFlowerType();
     }
 
     public TreeType getTreeType() {
-        return null;
+        return gardenCreator.getTreeType();
     }
 }

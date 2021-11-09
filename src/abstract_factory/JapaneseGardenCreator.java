@@ -14,19 +14,29 @@ public class JapaneseGardenCreator implements GardenCreator {
 
     @Override
     public FlowerType getFlowerType() {
-        return null;
+        if (this.flower != null) {
+            return this.flower.getFlowerType();
+        } else {
+            return null;
+        }
     }
 
     @Override
     public TreeType getTreeType() {
-        return null;
+        if (this.tree != null) {
+            return this.tree.getTreeType();
+        } else {
+            return null;
+        }
     }
 
     @Override
     public void createTree() {
+        this.tree = new Lilac();
     }
 
     @Override
     public void createFlower() {
+        this.flower = new Tsubaki();
     }
 }

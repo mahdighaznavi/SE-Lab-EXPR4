@@ -3,6 +3,6 @@ package abstract_factory;
 public class Chenar implements Tree{
     @Override
     public TreeType getTreeType() {
-        return null;
+        return TreeType.Chenar;
     }
 }
